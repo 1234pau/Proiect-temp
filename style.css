@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: „Dosis”, sans-serif;
+}
+
+
+/*----------HOME----------------*/
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url(imagini/joshua-earle-wFWQmOyfkkM-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 9px 14px;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.text-titlu {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-titlu h1 {
+    font-size: 90px;
+}
+
+.text-titlu p {
+    margin: 10px 0 40px;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 650px) {
+    nav {
+        display: inline-block;
+        padding: 2% 6%;
+        text-align: center;
+        float: right;
+    }
+    nav img {
+        display: none;
+    }
+    .nav-links {
+        text-align: left;
+    }
+    .nav-links ul li {
+        display: block;
+        padding: 9px 14px;
+    }
+    .nav-links ul li a {
+        color: #fff;
+        font-size: 17px;
+    }
+}
+
+
+/*-------------HOME--------------*/
+
+
+/*-------------ABOUT ME-----------------*/
+
+.about {
+    display: flex;
+    padding: 2% 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about img {
+    width: 30%;
+    border-radius: 10px;
+    align-items: center;
+    margin-right: 20px;
+    background-color: rgb(163, 151, 151);
+}
+
+.continut {
+    display: inline-block;
+    align-items: center;
+    padding: 3% 6%;
+    background-color: burlywood;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.4), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.continut h2 {
+    font-size: 50px;
+    text-align: justify;
+}
+
+.continut p {
+    font-size: 20px;
+    text-align: justify;
+    padding: 30px 0 0 0;
+}
+
+.cunostinte {
+    display: block;
+    align-items: center;
+    padding: 20px 0 0 0;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 850px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+    .about img {
+        border-radius: 50px;
+        margin-right: 0;
+        width: 8rem;
+    }
+}
+
+
+/*---------------ABOUT ME----------------*/
+
+
+/*---------------PROJECTES---------------*/
+
+.proiecte {
+    display: inline;
+    align-items: center;
+    padding: 5px 0 0 0;
+}
+
+.my-title {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.card-one,
+.card-two,
+.card-tree {
+    font-size: 20px;
+    padding: 30px 20px;
+    background-color: bisque;
+    border-radius: 10px;
+    margin: 0 20px 0 20px;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.4), 0 7px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-one h2,
+.card-two h2,
+.card-tree h2 {
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-one p,
+.card-two p,
+.card-tree h2 {
+    padding: 5px;
+}
+
+.project-link {
+    display: inline-block;
+    text-decoration: none;
+    align-items: center;
+    background-color: rgb(223, 156, 132);
+    padding: 5px 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: black;
+    width: 10rem;
+}
+
+@media only screen and (max-width: 850px) {
+    .card-one,
+    .card-two,
+    .card-tree {
+        font-size: 20px;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .card {
+        display: block;
+        padding: auto;
+    }
+}
+
+
+/*------------------PROJECTES--------------------*/
+
+
+/*------------------CONTACT-----------------------*/
+
+.media-icon {
+    background-color: rgb(197, 180, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0px;
+    padding: 50px 0;
+}
+
+.media>a {
+    margin: 0 7px;
+}
+
+@media only screen and(max-width: 400px)and(min-width:280px) {
+    .media-icon {
+        display: inline;
+        align-items: center;
+    }
+    .media>a {
+        font-size: 30px;
+    }
+}
