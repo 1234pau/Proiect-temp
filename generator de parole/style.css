@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+body {
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    background: white;
+    width: 800px;
+    border-radius: 7px;
+    padding: 50px 0;
+    margin-top: 120px;
+}
+
+.heading {
+    font-size: 55px;
+    font-weight: 800;
+    margin-left: 80px;
+}
+
+.input {
+    width: 600px;
+    height: 50px;
+    font-size: 35px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px #919191;
+    margin-top: 10px;
+    margin-left: 80px;
+    text-align: justify;
+    color: red;
+    outline: none;
+}
+
+.generate {
+    background: black;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+.generate :active {
+    background: black;
+    color: white;
+}

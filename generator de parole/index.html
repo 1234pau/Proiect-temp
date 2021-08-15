@@ -3,12 +3,34 @@
 
 <head>
     <title>Pasword Generator</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="script.js">-->
 </head>
 
 <body>
-    <script src="script.js"></script>
+    <div class="container">
+        <div class="heading">Generate Password</div>
+        <input type="text" placeholder="Password here." class="input" id="input" />
+        <button class="generate" oneclick="generate()">Generate Password</button>
+    </div>
+    <script>
+        function generate() {
+            var charset =
+                "0123456789ZXCVBNMLKJHGFDSAQWERTYUIOPzxcvbnmlkjhgfdsaqwertyuiop!@#$%^&*()_+~[]\*-;/.,=-}{|";
+            var passwordLength = 16;
+            var password = "";
+            for (var i = 0; i < passwordLength; i++) {
+                var randomnum = Math.floor(Math.random() * charset.length);
+                password += charset.substring(randomnum, randomnum + 1);
+
+            }
+            document.getElementById("input").value = password;
+        }
+    </script>
+
 </body>
 
 </html>
